@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0D2820">
+<title>Nos Poissons — Monkey</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav id="nav">
+  <a href="index.html" class="nav-logo"><img src="monkey.jpg" alt="Monkey" class="logo-img"></a>
+  <div class="nav-right">
+    <a href="index.html" class="nav-link">Accueil</a>
+    <a href="menu.html" class="nav-link active">Menu</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </div>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+</nav>
+<div class="mob-drawer" id="mobDrawer">
+  <a href="index.html" class="mob-link">Accueil</a>
+  <a href="menu.html" class="mob-link">Menu</a>
+  <a href="contact.html" class="mob-link">Contact</a>
+</div>
+<div class="page-hero"><p class="ph-label">Nos Sp&eacute;cialit&eacute;s</p><h1 class="ph-title">Nos Poissons</h1><div class="ph-line"></div><a href="menu.html" class="back-link">&#8592; Retour au Menu</a></div>
+<div class="section-switcher">
+  <a href="entrees.html" class="ss-btn"><div class="ss-icon"><i class="fas fa-leaf"></i></div><span class="ss-label">Nos Entrées</span></a>
+  <a href="viandes.html" class="ss-btn"><div class="ss-icon"><i class="fas fa-drumstick-bite"></i></div><span class="ss-label">Nos Viandes</span></a>
+  <a href="terroir.html" class="ss-btn"><div class="ss-icon"><i class="fas fa-cheese"></i></div><span class="ss-label">Saveurs du Terroir</span></a>
+  <a href="pates.html" class="ss-btn"><div class="ss-icon"><i class="fas fa-bowl-food"></i></div><span class="ss-label">Nos Pâtes</span></a>
+  <a href="poissons.html" class="ss-btn active"><div class="ss-icon"><i class="fas fa-fish"></i></div><span class="ss-label">Nos Poissons</span></a>
+  <a href="desserts.html" class="ss-btn"><div class="ss-icon"><i class="fas fa-cake-candles"></i></div><span class="ss-label">Nos Desserts</span></a>
+</div>
+<section class="dishes-wrap"><div class="dishes-grid">
+<div class="dish-card reveal">
+  <div class="dish-3d" data-glb="">
+    <div class="btn-layer">
+      <button class="voir-btn" onclick="loadDishViewer(this)"><span class="vb-t">Voir mon plat</span><span class="vb-i"><i class="fas fa-cube"></i></span></button>
+    </div>
+    <model-viewer src="" alt="Pavé de Mérou" auto-rotate camera-controls ar min-camera-orbit="auto 15deg auto" max-camera-orbit="auto 88deg auto" camera-orbit="0deg 68deg 2m" shadow-intensity="0.55" exposure="0.72"></model-viewer>
+  </div>
+  <div class="dish-info">
+    <div class="dish-name">Pavé de Mérou</div>
+    <div class="dish-desc">Pavé de mérou nacré, riz au beurre, crème safranée aux petits pois, carottes nouvelles et poireaux.</div>
+    <div class="dish-price">5500 DZD</div>
+  </div>
+</div>
+<div class="dish-card reveal">
+  <div class="dish-3d" data-glb="">
+    <div class="btn-layer">
+      <button class="voir-btn" onclick="loadDishViewer(this)"><span class="vb-t">Voir mon plat</span><span class="vb-i"><i class="fas fa-cube"></i></span></button>
+    </div>
+    <model-viewer src="" alt="Médaillon de Saumon" auto-rotate camera-controls ar min-camera-orbit="auto 15deg auto" max-camera-orbit="auto 88deg auto" camera-orbit="0deg 68deg 2m" shadow-intensity="0.55" exposure="0.72"></model-viewer>
+  </div>
+  <div class="dish-info">
+    <div class="dish-name">Médaillon de Saumon</div>
+    <div class="dish-desc">Médaillon de saumon marbré, farce fine de crevettes, chips de riz croustillantes et crème de pesto.</div>
+    <div class="dish-price">6000 DZD</div>
+  </div>
+</div>
+<div class="dish-card reveal">
+  <div class="dish-3d" data-glb="">
+    <div class="btn-layer">
+      <button class="voir-btn" onclick="loadDishViewer(this)"><span class="vb-t">Voir mon plat</span><span class="vb-i"><i class="fas fa-cube"></i></span></button>
+    </div>
+    <model-viewer src="" alt="Loup de Mer en Écaille" auto-rotate camera-controls ar min-camera-orbit="auto 15deg auto" max-camera-orbit="auto 88deg auto" camera-orbit="0deg 68deg 2m" shadow-intensity="0.55" exposure="0.72"></model-viewer>
+  </div>
+  <div class="dish-info">
+    <div class="dish-name">Loup de Mer en Écaille</div>
+    <div class="dish-desc">Filet de loup de mer en écaille de pommes de terre, m'hamsa à l'encre de seiche.</div>
+    <div class="dish-price">5200 DZD</div>
+  </div>
+</div>
+<div class="dish-card reveal">
+  <div class="dish-3d" data-glb="">
+    <div class="btn-layer">
+      <button class="voir-btn" onclick="loadDishViewer(this)"><span class="vb-t">Voir mon plat</span><span class="vb-i"><i class="fas fa-cube"></i></span></button>
+    </div>
+    <model-viewer src="" alt="Saint-Pierre Rôti" auto-rotate camera-controls ar min-camera-orbit="auto 15deg auto" max-camera-orbit="auto 88deg auto" camera-orbit="0deg 68deg 2m" shadow-intensity="0.55" exposure="0.72"></model-viewer>
+  </div>
+  <div class="dish-info">
+    <div class="dish-name">Saint-Pierre Rôti</div>
+    <div class="dish-desc">Filet de Saint-Pierre rôti au citron vert, risotto al verde.</div>
+    <div class="dish-price">5500 DZD</div>
+  </div>
+</div>
+<div class="dish-card reveal">
+  <div class="dish-3d" data-glb="">
+    <div class="btn-layer">
+      <button class="voir-btn" onclick="loadDishViewer(this)"><span class="vb-t">Voir mon plat</span><span class="vb-i"><i class="fas fa-cube"></i></span></button>
+    </div>
+    <model-viewer src="" alt="Pavé de Dorade" auto-rotate camera-controls ar min-camera-orbit="auto 15deg auto" max-camera-orbit="auto 88deg auto" camera-orbit="0deg 68deg 2m" shadow-intensity="0.55" exposure="0.72"></model-viewer>
+  </div>
+  <div class="dish-info">
+    <div class="dish-name">Pavé de Dorade</div>
+    <div class="dish-desc">Pavé de dorade sauvage rôtie, concassé de tomates confites à la provençale, tartelette fenouil-myrtille et huile de basilic.</div>
+    <div class="dish-price">5200 DZD</div>
+  </div>
+</div>
+</div></section>
+<footer>
+  <div class="ft-grid">
+    <div class="ft-brand">
+      <img src="monkey.jpg" alt="Monkey" class="ft-logo-img">
+      <p class="ft-tag">Fine Dining &middot; Alger</p>
+    </div>
+    <div class="ft-col">
+      <h4>Navigation</h4>
+      <ul><li><a href="index.html">Accueil</a></li><li><a href="menu.html">Menu</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </div>
+    <div class="ft-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><i class="fas fa-map-marker-alt"></i> 170 Rue Hassiba Ben Bouali, Belouizdad</li>
+        <li><i class="fas fa-phone"></i> +213 555 22 22 00</li>
+        <li><a href="https://www.instagram.com/monkey_alger/" target="_blank"><i class="fab fa-instagram"></i> @monkey_alger</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ft-bottom">&copy; 2025 Monkey &mdash; Made by <span class="ft-credit">Cliff Agency</span></div>
+</footer>
+<script src="script.js"></script>
+</body></html>

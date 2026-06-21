@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0D2820">
+<title>Monkey — Fine Dining Alger</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="intro">
+  <div class="intro-content">
+    <img src="monkey.jpg" alt="Monkey" class="intro-logo">
+    <div class="intro-name">MONKEY</div>
+    <div class="intro-sub">Fine Dining &middot; Alger</div>
+    <div class="intro-line"></div>
+  </div>
+</div>
+<nav id="nav">
+  <a href="index.html" class="nav-logo"><img src="monkey.jpg" alt="Monkey" class="logo-img"></a>
+  <div class="nav-right">
+    <a href="index.html" class="nav-link active">Accueil</a>
+    <a href="menu.html" class="nav-link">Menu</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </div>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+</nav>
+<div class="mob-drawer" id="mobDrawer">
+  <a href="index.html" class="mob-link">Accueil</a>
+  <a href="menu.html" class="mob-link">Menu</a>
+  <a href="contact.html" class="mob-link">Contact</a>
+</div>
+<section class="hero">
+  <canvas id="particles"></canvas>
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <p class="hero-kicker">Belouizdad &mdash; Alger</p>
+    <h1 class="hero-title">
+      <span class="ht-line">L&rsquo;excellence</span>
+      <span class="ht-line ht-italic">culinaire.</span>
+    </h1>
+    <p class="hero-desc">Une exp&eacute;rience gastronomique d&rsquo;exception o&ugrave; chaque plat devient une &oelig;uvre d&rsquo;art, visualis&eacute;e en 3D.</p>
+    <div class="hero-cta">
+      <a href="menu.html" class="btn-gold">D&eacute;couvrir le menu</a>
+      <a href="contact.html" class="btn-ghost">R&eacute;server</a>
+    </div>
+  </div>
+</section>
+<section class="about reveal">
+  <div class="sec-head"><p class="eyebrow">&mdash; Notre histoire</p><h2 class="sec-h2">Bienvenue chez <em>Monkey</em></h2></div>
+  <p>Nich&eacute; au c&oelig;ur de Belouizdad, Monkey est un sanctuaire de la gastronomie fine. Notre chef compose des assiettes qui marient les saveurs du terroir alg&eacute;rien aux techniques de la haute cuisine internationale. Chaque plat est une invitation au voyage &mdash; visualis&eacute; en 3D avant m&ecirc;me d&rsquo;&ecirc;tre d&eacute;gust&eacute;.</p>
+</section>
+<section class="features">
+  <div class="sec-head"><p class="eyebrow">&mdash; Notre signature</p><h2 class="sec-h2">L&rsquo;exp&eacute;rience <em>Monkey</em></h2></div>
+  <div class="feat-grid">
+    <div class="feat-card reveal"><div class="feat-ico"><i class="fas fa-cube"></i></div><h3>Menu 3D</h3><p>Visualisez chaque plat en 3D et r&eacute;alit&eacute; augment&eacute;e.</p></div>
+    <div class="feat-card reveal"><div class="feat-ico"><i class="fas fa-crown"></i></div><h3>Fine Dining</h3><p>Haute cuisine avec des ingr&eacute;dients d&rsquo;exception.</p></div>
+    <div class="feat-card reveal"><div class="feat-ico"><i class="fas fa-music"></i></div><h3>Ambiance Lounge</h3><p>Un cadre luxueux pour des soir&eacute;es inoubliables.</p></div>
+  </div>
+</section>
+<footer>
+  <div class="ft-grid">
+    <div class="ft-brand">
+      <img src="monkey.jpg" alt="Monkey" class="ft-logo-img">
+      <p class="ft-tag">Fine Dining &middot; Alger</p>
+    </div>
+    <div class="ft-col">
+      <h4>Navigation</h4>
+      <ul><li><a href="index.html">Accueil</a></li><li><a href="menu.html">Menu</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </div>
+    <div class="ft-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><i class="fas fa-map-marker-alt"></i> 170 Rue Hassiba Ben Bouali, Belouizdad</li>
+        <li><i class="fas fa-phone"></i> +213 555 22 22 00</li>
+        <li><a href="https://www.instagram.com/monkey_alger/" target="_blank"><i class="fab fa-instagram"></i> @monkey_alger</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ft-bottom">&copy; 2025 Monkey &mdash; Made by <span class="ft-credit">Cliff Agency</span></div>
+</footer>
+<script src="script.js"></script>
+</body></html>
