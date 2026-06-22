@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0D2820">
+<title>Menu — Monkey</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav id="nav">
+  <a href="index.html" class="nav-logo"><img src="monkey.jpg" alt="Monkey" class="logo-img"></a>
+  <div class="nav-right">
+    <a href="index.html" class="nav-link">Accueil</a>
+    <a href="menu.html" class="nav-link active">Menu</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <button class="lang-toggle" id="langToggle"><span class="lang-fr active">FR</span><span class="lang-sep">/</span><span class="lang-en">EN</span></button>
+  </div>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+</nav>
+<div class="mob-drawer" id="mobDrawer">
+  <a href="index.html" class="mob-link">Accueil</a>
+  <a href="menu.html" class="mob-link">Menu</a>
+  <a href="contact.html" class="mob-link">Contact</a>
+</div>
+<div class="page-hero"><p class="ph-label">Notre Carte</p><h1 class="ph-title" data-fr="Le Menu" data-en="The Menu">Le Menu</h1><div class="ph-line"></div></div>
+<section class="menu-hub">
+  <div class="menu-grid-hub">
+    <a href="entrees.html" class="ms-card reveal"><div class="ms-icon"><i class="fas fa-leaf"></i></div><div class="ms-name">Nos Entrées</div><div class="ms-count">7 plats</div></a>
+    <a href="viandes.html" class="ms-card reveal"><div class="ms-icon"><i class="fas fa-drumstick-bite"></i></div><div class="ms-name">Nos Viandes</div><div class="ms-count">7 plats</div></a>
+    <a href="terroir.html" class="ms-card reveal"><div class="ms-icon"><i class="fas fa-cheese"></i></div><div class="ms-name">Saveurs du Terroir</div><div class="ms-count">4 plats</div></a>
+    <a href="pates.html" class="ms-card reveal"><div class="ms-icon"><i class="fas fa-bowl-food"></i></div><div class="ms-name">Nos Pâtes</div><div class="ms-count">3 plats</div></a>
+    <a href="poissons.html" class="ms-card reveal"><div class="ms-icon"><i class="fas fa-fish"></i></div><div class="ms-name">Nos Poissons</div><div class="ms-count">5 plats</div></a>
+    <a href="desserts.html" class="ms-card reveal"><div class="ms-icon"><i class="fas fa-cake-candles"></i></div><div class="ms-name">Nos Desserts</div><div class="ms-count">5 plats</div></a>
+  </div>
+</section>
+<footer>
+  <div class="ft-grid">
+    <div class="ft-brand">
+      <img src="monkey.jpg" alt="Monkey" class="ft-logo-img">
+      <p class="ft-tag">Fine Dining &middot; Alger</p>
+    </div>
+    <div class="ft-col">
+      <h4>Navigation</h4>
+      <ul><li><a href="index.html">Accueil</a></li><li><a href="menu.html">Menu</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </div>
+    <div class="ft-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><i class="fas fa-map-marker-alt"></i> 170 Rue Hassiba Ben Bouali, Belouizdad</li>
+        <li><i class="fas fa-phone"></i> +213 555 22 22 00</li>
+        <li><a href="https://www.instagram.com/monkey_alger/" target="_blank"><i class="fab fa-instagram"></i> @monkey_alger</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ft-bottom">&copy; 2025 Monkey &mdash; Made by <span class="ft-credit">Cliff Agency</span></div>
+</footer>
+<script src="script.js"></script>
+</body></html>
