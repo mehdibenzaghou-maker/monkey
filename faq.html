@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0D2820">
+<title>FAQ — Monkey</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&family=Poiret+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav id="nav">
+  <a href="index.html" class="nav-logo"><img src="monkey.jpg" alt="Monkey" class="logo-img"></a>
+  <div class="nav-right">
+    <a href="index.html" class="nav-link" data-fr="Accueil" data-en="Home">Accueil</a>
+    <a href="menu.html" class="nav-link" data-fr="Menu" data-en="Menu">Menu</a>
+    <a href="reservation.html" class="nav-link" data-fr="Réservation" data-en="Reservation">Réservation</a>
+    <a href="contact.html" class="nav-link" data-fr="Contact" data-en="Contact">Contact</a>
+    <button class="lang-toggle" id="langToggle"><span class="lang-fr active">FR</span><span class="lang-sep">/</span><span class="lang-en">EN</span></button>
+  </div>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+</nav>
+<div class="mob-drawer" id="mobDrawer">
+  <a href="index.html" class="mob-link">Accueil</a>
+  <a href="menu.html" class="mob-link">Menu</a>
+  <a href="reservation.html" class="mob-link">Réservation</a>
+  <a href="contact.html" class="mob-link">Contact</a>
+  <button class="lang-toggle mob-lang" id="langToggleMob"><span class="lang-fr active">FR</span> / <span class="lang-en">EN</span></button>
+</div>
+
+<div class="page-hero">
+  <p class="ph-label" data-fr="Questions fréquentes" data-en="Frequently asked questions">Questions fréquentes</p>
+  <h1 class="ph-title">FAQ</h1>
+  <div class="ph-line"></div>
+</div>
+
+<section class="faq-wrap">
+  <!-- FAQ Accordion -->
+  <div class="faq-list">
+    <div class="faq-item reveal">
+      <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+        <span data-fr="Quels sont vos horaires d'ouverture ?" data-en="What are your opening hours?">Quels sont vos horaires d'ouverture ?</span>
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="faq-a"><p data-fr="Nous sommes ouverts du mardi au dimanche, de 12h00 à 23h00. Fermé le lundi." data-en="We are open Tuesday to Sunday, from 12:00 PM to 11:00 PM. Closed on Mondays.">Nous sommes ouverts du mardi au dimanche, de 12h00 à 23h00. Fermé le lundi.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+        <span data-fr="La réservation est-elle obligatoire ?" data-en="Is a reservation required?">La réservation est-elle obligatoire ?</span>
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="faq-a"><p data-fr="La réservation est fortement recommandée, surtout le weekend. Vous pouvez réserver via notre page dédiée ou par téléphone." data-en="Reservations are highly recommended, especially on weekends. You can book through our dedicated page or by phone.">La réservation est fortement recommandée, surtout le weekend. Vous pouvez réserver via notre page dédiée ou par téléphone.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+        <span data-fr="Proposez-vous un menu végétarien ?" data-en="Do you offer a vegetarian menu?">Proposez-vous un menu végétarien ?</span>
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="faq-a"><p data-fr="Oui, notre carte comprend plusieurs options végétariennes. Notre chef peut également adapter certains plats sur demande." data-en="Yes, our menu includes several vegetarian options. Our chef can also adapt certain dishes upon request.">Oui, notre carte comprend plusieurs options végétariennes. Notre chef peut également adapter certains plats sur demande.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+        <span data-fr="Peut-on organiser un événement privé ?" data-en="Can we organize a private event?">Peut-on organiser un événement privé ?</span>
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="faq-a"><p data-fr="Absolument. Consultez notre page B2B pour les événements d'entreprise ou contactez-nous pour tout événement privé." data-en="Absolutely. Check our B2B page for corporate events or contact us for any private event.">Absolument. Consultez notre <a href="b2b.html">page B2B</a> pour les événements d'entreprise ou contactez-nous pour tout événement privé.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+        <span data-fr="Comment fonctionne le menu 3D ?" data-en="How does the 3D menu work?">Comment fonctionne le menu 3D ?</span>
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="faq-a"><p data-fr="Sur notre page menu, cliquez sur 'Voir mon plat' pour visualiser chaque plat en 3D. Vous pouvez le faire tourner et même le voir en réalité augmentée sur votre table." data-en="On our menu page, click 'Voir mon plat' to visualize each dish in 3D. You can rotate it and even see it in augmented reality on your table.">Sur notre page menu, cliquez sur « Voir mon plat » pour visualiser chaque plat en 3D. Vous pouvez le faire tourner et même le voir en réalité augmentée sur votre table.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+        <span data-fr="Y a-t-il un parking à proximité ?" data-en="Is there parking nearby?">Y a-t-il un parking à proximité ?</span>
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="faq-a"><p data-fr="Un parking est disponible à proximité du restaurant. Notre équipe peut vous orienter à votre arrivée." data-en="Parking is available near the restaurant. Our team can guide you upon arrival.">Un parking est disponible à proximité du restaurant. Notre équipe peut vous orienter à votre arrivée.</p></div>
+    </div>
+  </div>
+
+  <!-- Comment form -->
+  <div class="faq-comment reveal">
+    <h2 data-fr="Une question ? Un commentaire ?" data-en="A question? A comment?">Une question ? Un commentaire ?</h2>
+    <form id="faqForm" class="mk-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label data-fr="Votre nom" data-en="Your name">Votre nom</label>
+          <input type="text" id="faqName" required>
+        </div>
+        <div class="form-group">
+          <label data-fr="Téléphone" data-en="Phone">Téléphone</label>
+          <input type="tel" id="faqPhone">
+        </div>
+      </div>
+      <div class="form-group full">
+        <label data-fr="Votre message" data-en="Your message">Votre message</label>
+        <textarea id="faqMsg" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn-gold form-submit">
+        <i class="fab fa-whatsapp"></i> <span data-fr="Envoyer" data-en="Send">Envoyer</span>
+      </button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="ft-grid">
+    <div class="ft-brand"><img src="monkey.jpg" alt="Monkey" class="ft-logo-img"><p class="ft-tag">Fine Dining · Alger</p></div>
+    <div class="ft-col"><h4>Navigation</h4><ul><li><a href="index.html">Accueil</a></li><li><a href="menu.html">Menu</a></li><li><a href="reservation.html">Réservation</a></li><li><a href="b2b.html">B2B</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="ft-col"><h4>Contact</h4><ul><li><i class="fas fa-map-marker-alt"></i> 170 Rue Hassiba Ben Bouali, Belouizdad</li><li><i class="fas fa-phone"></i> +213 555 22 22 00</li><li><a href="https://www.instagram.com/monkey_alger/" target="_blank"><i class="fab fa-instagram"></i> @monkey_alger</a></li></ul></div>
+  </div>
+  <div class="ft-bottom">&copy; 2025 Monkey — Made by <span class="ft-credit">Cliff Agency</span></div>
+</footer>
+<script src="script.js"></script>
+<script>
+document.getElementById('faqForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  var n=document.getElementById('faqName').value;
+  var p=document.getElementById('faqPhone').value;
+  var m=document.getElementById('faqMsg').value;
+  var msg='💬 *Question/Commentaire — Monkey*%0A%0A';
+  msg+='*Nom:* '+n+'%0A';
+  if(p)msg+='*Tél:* '+p+'%0A';
+  msg+='*Message:* '+m+'%0A';
+  window.open('https://wa.me/213555222200?text='+msg,'_blank');
+});
+</script>
+</body></html>

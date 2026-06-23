@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0D2820">
+<title>Monkey — Fine Dining Alger</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&family=Poiret+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="intro">
+  <div class="intro-content">
+    <img src="monkey.jpg" alt="Monkey" class="intro-logo">
+    <div class="intro-name" style="font-family:'Poiret One',sans-serif">MONKEY</div>
+    <div class="intro-sub" data-fr="Fine Dining &middot; Alger" data-en="Fine Dining &middot; Algiers">Fine Dining &middot; Alger</div>
+    <div class="intro-line"></div>
+  </div>
+</div>
+<nav id="nav">
+  <a href="index.html" class="nav-logo"><img src="monkey.jpg" alt="Monkey" class="logo-img"></a>
+  <div class="nav-right">
+    <a href="index.html" class="nav-link active" data-fr="Accueil" data-en="Home">Accueil</a>
+    <a href="menu.html" class="nav-link" data-fr="Menu" data-en="Menu">Menu</a>
+    <a href="reservation.html" class="nav-link" data-fr="Réservation" data-en="Reservation">Réservation</a>
+    <a href="contact.html" class="nav-link" data-fr="Contact" data-en="Contact">Contact</a>
+    <button class="lang-toggle" id="langToggle"><span class="lang-fr active">FR</span><span class="lang-sep">/</span><span class="lang-en">EN</span></button>
+  </div>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+</nav>
+<div class="mob-drawer" id="mobDrawer">
+  <a href="index.html" class="mob-link" data-fr="Accueil" data-en="Home">Accueil</a>
+  <a href="menu.html" class="mob-link" data-fr="Menu" data-en="Menu">Menu</a>
+  <a href="reservation.html" class="mob-link" data-fr="Réservation" data-en="Reservation">Réservation</a>
+  <a href="contact.html" class="mob-link" data-fr="Contact" data-en="Contact">Contact</a>
+  <button class="lang-toggle mob-lang" id="langToggleMob"><span class="lang-fr active">FR</span> / <span class="lang-en">EN</span></button>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <canvas id="particles"></canvas>
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <p class="hero-kicker">Belouizdad &mdash; Alger</p>
+    <h1 class="hero-title">
+      <span class="ht-line" data-fr="L&rsquo;excellence" data-en="Culinary">L&rsquo;excellence</span>
+      <span class="ht-line ht-italic" data-fr="culinaire." data-en="excellence.">culinaire.</span>
+    </h1>
+    <p class="hero-desc" data-fr="Une exp&eacute;rience gastronomique d&rsquo;exception o&ugrave; chaque plat devient une &oelig;uvre d&rsquo;art, visualis&eacute;e en 3D." data-en="An exceptional gastronomic experience where every dish becomes a work of art, visualized in 3D.">Une exp&eacute;rience gastronomique d&rsquo;exception o&ugrave; chaque plat devient une &oelig;uvre d&rsquo;art, visualis&eacute;e en 3D.</p>
+    <div class="hero-cta">
+      <a href="menu.html" class="btn-gold" data-fr="D&eacute;couvrir le menu" data-en="Discover the menu">D&eacute;couvrir le menu</a>
+      <a href="contact.html" class="btn-ghost" data-fr="R&eacute;server" data-en="Reserve">R&eacute;server</a>
+    </div>
+  </div>
+</section>
+
+<!-- AMBIANCE -->
+<section class="ambiance">
+  <div class="sec-head reveal"><p class="eyebrow" data-fr="&mdash; L&rsquo;ambiance" data-en="&mdash; The atmosphere">&mdash; L&rsquo;ambiance</p><h2 class="sec-h2" data-fr="Un cadre" data-en="A setting">Un cadre</h2><h2 class="sec-h2 italic" data-fr="d&rsquo;exception." data-en="beyond compare.">d&rsquo;exception.</h2></div>
+  <div class="amb-row reveal">
+    <div class="amb-media"><img src="pic.JPG" alt="Monkey" class="amb-img" loading="lazy"></div>
+    <div class="amb-text">
+      <div class="amb-num">01</div>
+      <h3 data-fr="L&rsquo;&eacute;l&eacute;gance incarnée" data-en="Elegance incarnate">L&rsquo;&eacute;l&eacute;gance incarnée</h3>
+      <p data-fr="Un int&eacute;rieur soigneusement pens&eacute; o&ugrave; chaque d&eacute;tail r&eacute;v&egrave;le un souci du raffinement. Lumi&egrave;res tamisées, mati&egrave;res nobles et une atmosph&egrave;re feutr&eacute;e qui invite &agrave; la d&eacute;couverte." data-en="A carefully designed interior where every detail reveals a dedication to refinement. Soft lighting, noble materials, and a hushed atmosphere that invites discovery.">Un int&eacute;rieur soigneusement pens&eacute; o&ugrave; chaque d&eacute;tail r&eacute;v&egrave;le un souci du raffinement. Lumi&egrave;res tamisées, mati&egrave;res nobles et une atmosph&egrave;re feutr&eacute;e qui invite &agrave; la d&eacute;couverte.</p>
+    </div>
+  </div>
+  <div class="amb-row amb-reverse reveal">
+    <div class="amb-media"><video src="https://pub-235bb593f2704dea88a5c6c4fda2c910.r2.dev/video.mov" class="amb-video" autoplay muted loop playsinline></video></div>
+    <div class="amb-text">
+      <div class="amb-num">02</div>
+      <h3 data-fr="Une exp&eacute;rience vivante" data-en="A living experience">Une exp&eacute;rience vivante</h3>
+      <p data-fr="Monkey prend vie le soir. Musique lounge, service attentionn&eacute;, plats spectaculaires &mdash; chaque soir&eacute;e est une c&eacute;l&eacute;bration du go&ucirc;t et du raffinement." data-en="Monkey comes alive at night. Lounge music, attentive service, spectacular dishes &mdash; every evening is a celebration of taste and refinement.">Monkey prend vie le soir. Musique lounge, service attentionn&eacute;, plats spectaculaires &mdash; chaque soir&eacute;e est une c&eacute;l&eacute;bration du go&ucirc;t et du raffinement.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CHEF -->
+<section class="chef-section">
+  <div class="chef-inner reveal">
+    <div class="chef-photo-wrap">
+      <img src="chef.jpg" alt="Chef Hafidh Lounas" class="chef-photo" loading="lazy">
+      <div class="chef-frame"></div>
+    </div>
+    <div class="chef-text">
+      <p class="eyebrow" data-fr="&mdash; Notre Chef" data-en="&mdash; Our Chef">&mdash; Notre Chef</p>
+      <h2 class="chef-name">Hafidh Lounas</h2>
+      <p class="chef-desc" data-fr="Figure embl&eacute;matique de la gastronomie alg&eacute;rienne, le Chef Hafidh Lounas apporte &agrave; Monkey Restaurant une expertise acquise au fil d&rsquo;une carri&egrave;re remarquable. Son approche audacieuse, son sens du d&eacute;tail et sa passion pour l&rsquo;excellence donnent naissance &agrave; une cuisine &eacute;l&eacute;gante, authentique et r&eacute;solument contemporaine." data-en="An iconic figure in Algerian gastronomy, Chef Hafidh Lounas brings to Monkey Restaurant an expertise acquired throughout a remarkable career. His bold approach, attention to detail, and passion for excellence give rise to elegant, authentic, and resolutely contemporary cuisine.">Figure embl&eacute;matique de la gastronomie alg&eacute;rienne, le Chef Hafidh Lounas apporte &agrave; Monkey Restaurant une expertise acquise au fil d&rsquo;une carri&egrave;re remarquable. Son approche audacieuse, son sens du d&eacute;tail et sa passion pour l&rsquo;excellence donnent naissance &agrave; une cuisine &eacute;l&eacute;gante, authentique et r&eacute;solument contemporaine.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about reveal">
+  <div class="sec-head"><p class="eyebrow" data-fr="&mdash; Notre histoire" data-en="&mdash; Our story">&mdash; Notre histoire</p><h2 class="sec-h2" data-fr="Bienvenue chez" data-en="Welcome to">Bienvenue chez</h2><h2 class="sec-h2 italic"><em>Monkey</em></h2></div>
+  <p data-fr="Nich&eacute; au c&oelig;ur de Belouizdad, Monkey est un sanctuaire de la gastronomie fine. Notre chef compose des assiettes qui marient les saveurs du terroir alg&eacute;rien aux techniques de la haute cuisine internationale. Chaque plat est une invitation au voyage &mdash; visualis&eacute; en 3D avant m&ecirc;me d&rsquo;&ecirc;tre d&eacute;gust&eacute;." data-en="Nestled in the heart of Belouizdad, Monkey is a sanctuary of fine dining. Our chef creates dishes that blend Algerian terroir flavors with international haute cuisine techniques. Each dish is an invitation to travel &mdash; visualized in 3D before you even taste it.">Nich&eacute; au c&oelig;ur de Belouizdad, Monkey est un sanctuaire de la gastronomie fine. Notre chef compose des assiettes qui marient les saveurs du terroir alg&eacute;rien aux techniques de la haute cuisine internationale. Chaque plat est une invitation au voyage &mdash; visualis&eacute; en 3D avant m&ecirc;me d&rsquo;&ecirc;tre d&eacute;gust&eacute;.</p>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <div class="sec-head"><p class="eyebrow" data-fr="&mdash; Notre signature" data-en="&mdash; Our signature">&mdash; Notre signature</p><h2 class="sec-h2" data-fr="L&rsquo;exp&eacute;rience" data-en="The experience">L&rsquo;exp&eacute;rience</h2><h2 class="sec-h2 italic"><em>Monkey</em></h2></div>
+  <div class="feat-grid">
+    <div class="feat-card reveal"><div class="feat-ico"><i class="fas fa-cube"></i></div><h3 data-fr="Menu 3D" data-en="3D Menu">Menu 3D</h3><p data-fr="Visualisez chaque plat en 3D et r&eacute;alit&eacute; augment&eacute;e." data-en="Visualize every dish in 3D and augmented reality.">Visualisez chaque plat en 3D et r&eacute;alit&eacute; augment&eacute;e.</p></div>
+    <div class="feat-card reveal"><div class="feat-ico"><i class="fas fa-crown"></i></div><h3 data-fr="Fine Dining" data-en="Fine Dining">Fine Dining</h3><p data-fr="Haute cuisine avec des ingr&eacute;dients d&rsquo;exception." data-en="Haute cuisine with exceptional ingredients.">Haute cuisine avec des ingr&eacute;dients d&rsquo;exception.</p></div>
+    <div class="feat-card reveal"><div class="feat-ico"><i class="fas fa-music"></i></div><h3 data-fr="Ambiance Lounge" data-en="Lounge Ambiance">Ambiance Lounge</h3><p data-fr="Un cadre luxueux pour des soir&eacute;es inoubliables." data-en="A luxurious setting for unforgettable evenings.">Un cadre luxueux pour des soir&eacute;es inoubliables.</p></div>
+  </div>
+</section>
+
+<footer>
+  <div class="ft-grid">
+    <div class="ft-brand">
+      <img src="monkey.jpg" alt="Monkey" class="ft-logo-img">
+      <p class="ft-tag">Fine Dining &middot; Alger</p>
+    </div>
+    <div class="ft-col">
+      <h4>Navigation</h4>
+      <ul><li><a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a></li><li><a href="menu.html">Menu</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </div>
+    <div class="ft-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><i class="fas fa-map-marker-alt"></i> 170 Rue Hassiba Ben Bouali, Belouizdad</li>
+        <li><i class="fas fa-phone"></i> +213 555 22 22 00</li>
+        <li><a href="https://www.instagram.com/monkey_alger/" target="_blank"><i class="fab fa-instagram"></i> @monkey_alger</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ft-bottom">&copy; 2025 Monkey &mdash; Made by <span class="ft-credit">Cliff Agency</span></div>
+</footer>
+<script src="script.js"></script>
+</body></html>

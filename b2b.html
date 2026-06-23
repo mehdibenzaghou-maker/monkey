@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0D2820">
+<title>B2B — Monkey</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&family=Poiret+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav id="nav">
+  <a href="index.html" class="nav-logo"><img src="monkey.jpg" alt="Monkey" class="logo-img"></a>
+  <div class="nav-right">
+    <a href="index.html" class="nav-link" data-fr="Accueil" data-en="Home">Accueil</a>
+    <a href="menu.html" class="nav-link" data-fr="Menu" data-en="Menu">Menu</a>
+    <a href="reservation.html" class="nav-link" data-fr="Réservation" data-en="Reservation">Réservation</a>
+    <a href="contact.html" class="nav-link" data-fr="Contact" data-en="Contact">Contact</a>
+    <button class="lang-toggle" id="langToggle"><span class="lang-fr active">FR</span><span class="lang-sep">/</span><span class="lang-en">EN</span></button>
+  </div>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+</nav>
+<div class="mob-drawer" id="mobDrawer">
+  <a href="index.html" class="mob-link">Accueil</a>
+  <a href="menu.html" class="mob-link">Menu</a>
+  <a href="reservation.html" class="mob-link">Réservation</a>
+  <a href="contact.html" class="mob-link">Contact</a>
+  <button class="lang-toggle mob-lang" id="langToggleMob"><span class="lang-fr active">FR</span> / <span class="lang-en">EN</span></button>
+</div>
+
+<div class="page-hero">
+  <p class="ph-label" data-fr="Événements professionnels" data-en="Corporate Events">Événements professionnels</p>
+  <h1 class="ph-title" data-fr="Espace B2B" data-en="B2B Space">Espace B2B</h1>
+  <div class="ph-line"></div>
+</div>
+
+<section class="form-wrap">
+  <div class="form-intro reveal">
+    <p data-fr="Organisez vos événements d'entreprise chez Monkey. Dîners d'affaires, lancements de produits, séminaires — notre équipe crée une expérience sur mesure pour votre entreprise." data-en="Host your corporate events at Monkey. Business dinners, product launches, seminars — our team creates a bespoke experience for your company.">Organisez vos événements d'entreprise chez Monkey. Dîners d'affaires, lancements de produits, séminaires — notre équipe crée une expérience sur mesure pour votre entreprise.</p>
+  </div>
+  <form id="b2bForm" class="mk-form reveal">
+    <div class="form-row">
+      <div class="form-group">
+        <label data-fr="Nom de l'entreprise" data-en="Company name">Nom de l'entreprise</label>
+        <input type="text" id="b2bCompany" required placeholder="Votre entreprise">
+      </div>
+      <div class="form-group">
+        <label data-fr="Nom du contact" data-en="Contact name">Nom du contact</label>
+        <input type="text" id="b2bName" required placeholder="Prénom et nom">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label data-fr="Email professionnel" data-en="Business email">Email professionnel</label>
+        <input type="email" id="b2bEmail" required placeholder="email@entreprise.com">
+      </div>
+      <div class="form-group">
+        <label data-fr="Téléphone" data-en="Phone">Téléphone</label>
+        <input type="tel" id="b2bPhone" required placeholder="+213...">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label data-fr="Type d'événement" data-en="Event type">Type d'événement</label>
+        <select id="b2bType" required>
+          <option value="" data-fr="Sélectionnez" data-en="Select">Sélectionnez</option>
+          <option value="Dîner d'affaires">Dîner d'affaires</option>
+          <option value="Lancement de produit">Lancement de produit</option>
+          <option value="Séminaire">Séminaire</option>
+          <option value="Team building">Team building</option>
+          <option value="Réception / Cocktail">Réception / Cocktail</option>
+          <option value="Autre">Autre</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label data-fr="Nombre d'invités" data-en="Number of guests">Nombre d'invités</label>
+        <input type="number" id="b2bGuests" required placeholder="10" min="1">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label data-fr="Date souhaitée" data-en="Preferred date">Date souhaitée</label>
+        <input type="date" id="b2bDate" required>
+      </div>
+      <div class="form-group">
+        <label data-fr="Budget estimé" data-en="Estimated budget">Budget estimé</label>
+        <select id="b2bBudget">
+          <option value="" data-fr="Non défini" data-en="Not defined">Non défini</option>
+          <option value="< 50 000 DZD">< 50 000 DZD</option>
+          <option value="50 000 - 150 000 DZD">50 000 - 150 000 DZD</option>
+          <option value="150 000 - 300 000 DZD">150 000 - 300 000 DZD</option>
+          <option value="300 000 - 500 000 DZD">300 000 - 500 000 DZD</option>
+          <option value="> 500 000 DZD">> 500 000 DZD</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group full">
+      <label data-fr="Description de l'événement" data-en="Event description">Description de l'événement</label>
+      <textarea id="b2bDesc" rows="5" placeholder="Décrivez votre événement, vos besoins spécifiques..."></textarea>
+    </div>
+    <button type="submit" class="btn-gold form-submit">
+      <i class="fab fa-whatsapp"></i> <span data-fr="Envoyer la demande" data-en="Send request">Envoyer la demande</span>
+    </button>
+  </form>
+  <div class="form-footer reveal">
+    <p data-fr="Ou contactez notre équipe B2B" data-en="Or contact our B2B team">Ou contactez notre équipe B2B</p>
+    <a href="tel:+213555222200" class="form-phone"><i class="fas fa-phone"></i> +213 555 22 22 00</a>
+  </div>
+</section>
+
+<footer>
+  <div class="ft-grid">
+    <div class="ft-brand"><img src="monkey.jpg" alt="Monkey" class="ft-logo-img"><p class="ft-tag">Fine Dining · Alger</p></div>
+    <div class="ft-col"><h4>Navigation</h4><ul><li><a href="index.html">Accueil</a></li><li><a href="menu.html">Menu</a></li><li><a href="reservation.html">Réservation</a></li><li><a href="b2b.html">B2B</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="ft-col"><h4>Contact</h4><ul><li><i class="fas fa-map-marker-alt"></i> 170 Rue Hassiba Ben Bouali, Belouizdad</li><li><i class="fas fa-phone"></i> +213 555 22 22 00</li><li><a href="https://www.instagram.com/monkey_alger/" target="_blank"><i class="fab fa-instagram"></i> @monkey_alger</a></li></ul></div>
+  </div>
+  <div class="ft-bottom">&copy; 2025 Monkey — Made by <span class="ft-credit">Cliff Agency</span></div>
+</footer>
+<script src="script.js"></script>
+<script>
+document.getElementById('b2bForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  var c=document.getElementById('b2bCompany').value;
+  var n=document.getElementById('b2bName').value;
+  var em=document.getElementById('b2bEmail').value;
+  var p=document.getElementById('b2bPhone').value;
+  var t=document.getElementById('b2bType').value;
+  var g=document.getElementById('b2bGuests').value;
+  var d=document.getElementById('b2bDate').value;
+  var b=document.getElementById('b2bBudget').value;
+  var desc=document.getElementById('b2bDesc').value;
+  var msg='🏢 *Demande B2B — Monkey*%0A%0A';
+  msg+='*Entreprise:* '+c+'%0A';
+  msg+='*Contact:* '+n+'%0A';
+  msg+='*Email:* '+em+'%0A';
+  msg+='*Tél:* '+p+'%0A';
+  msg+='*Type:* '+t+'%0A';
+  msg+='*Invités:* '+g+'%0A';
+  msg+='*Date:* '+d+'%0A';
+  if(b)msg+='*Budget:* '+b+'%0A';
+  if(desc)msg+='*Description:* '+desc+'%0A';
+  window.open('https://wa.me/213555222200?text='+msg,'_blank');
+});
+</script>
+</body></html>
