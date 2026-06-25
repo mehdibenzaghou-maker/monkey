@@ -23,7 +23,20 @@ img,video{max-width:100%;display:block}
 #intro{position:fixed;inset:0;z-index:99999;background:var(--bg);display:flex;align-items:center;justify-content:center;animation:introExit .8s ease 4s forwards}
 .intro-content{display:flex;flex-direction:column;align-items:center;gap:14px}
 .intro-logo{width:120px;height:120px;object-fit:contain;border-radius:50%;opacity:0;transform:scale(.6) rotate(-5deg);animation:introLogoIn 1.2s var(--ease) .3s forwards;filter:drop-shadow(0 0 50px rgba(197,165,90,.35))}
-.intro-name{font-family:var(--flogo);font-size:clamp(2.2rem,8vw,3.5rem);letter-spacing:clamp(8px,3vw,16px);color:var(--gold);opacity:0;animation:introSlideUp 1s ease .9s forwards}
+.intro-name{
+  font-family:'Bebas Neue',var(--fdisp),sans-serif;
+  font-size:clamp(3rem,12vw,5rem);
+  letter-spacing:clamp(10px,4vw,22px);
+  font-weight:400;
+  background:repeating-linear-gradient(0deg,#C5A55A 0px,#C5A55A 2.5px,transparent 2.5px,transparent 5.5px);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+  color:var(--gold);
+  opacity:0;
+  animation:introSlideUp 1s ease .9s forwards;
+  filter:drop-shadow(0 0 15px rgba(197,165,90,.2));
+}
 .intro-sub{font-size:.7rem;letter-spacing:4px;text-transform:uppercase;color:var(--muted);opacity:0;animation:introSlideUp 1s ease 1.4s forwards}
 .intro-line{width:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);animation:introLine 1s ease 2s forwards}
 @keyframes introLogoIn{to{opacity:1;transform:scale(1) rotate(0)}}
